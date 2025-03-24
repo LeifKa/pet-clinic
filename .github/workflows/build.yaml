@@ -19,5 +19,5 @@ jobs:
   
     - name: Compile, build and push
       run: |
-        #### AUFGABE COMPILE, DOCKER BUILD UND PUSH
-          # hier ist Platz für maven package und docker build
+        mvn package
+        docker build -t ghcr.io/LeifKa/petclinic:latest .
